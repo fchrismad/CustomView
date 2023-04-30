@@ -41,12 +41,12 @@ public class EditTextWithClear extends AppCompatEditText {
         setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if (getCompoundDrawables()[2] != null){
+                if (getCompoundDrawablesRelative()[2] != null){
                     float clearButtonPosition =
                             (getWidth()-getPaddingEnd()-mClearButtonImage.getIntrinsicWidth());
                     boolean isClearButtonClicked = false;
 
-                    if (event.getX() > clearButtonPosition) {
+                    if (event.getRawX() > clearButtonPosition) {
                         isClearButtonClicked = true;
                     }
 
@@ -89,7 +89,7 @@ public class EditTextWithClear extends AppCompatEditText {
     }
 
     private void showClearButton() {
-        setCompoundDrawablesWithIntrinsicBounds(null, null, mClearButtonImage, null);
+        setCompoundDrawablesRelativeWithIntrinsicBounds(null, null, mClearButtonImage, null);
     }
 
     private void hideClearButton() {

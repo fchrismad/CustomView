@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">عرض مخصصة</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="action_language">لغة</string>
+</resources>

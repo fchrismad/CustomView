@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CustomView</string>
     <string name="last_name">Last Name</string>
+    <string name="action_language">Language</string>
 </resources>
